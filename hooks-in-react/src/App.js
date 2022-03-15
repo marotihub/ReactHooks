@@ -23,7 +23,10 @@ import Parent from './childToparent/Parent';
 // import Parent from './reactMemo/Parent';
 import ForceUpdate from './reactMemo/ForceUpdate';
 import Axios from './practiceAxios/Axios';
-
+import ControlledComponent from './Hooks/useRef/ControlledComponent';
+import UncontrolledComponent from './Hooks/useRef/UncontrolledComponent';
+import FormValidationReact from './FormValidatation/FormValidationReact';
+import ToggleDisplay from './toggleDisplay/ToggleDisplay';
 
 // const UserContext= React.createContext()
 // const ChannelContext= React.createContext()
@@ -41,7 +44,7 @@ function App() {
           {/* <MouseContainer/> */}
           {/* <IntervalHookCounter/> */}
           {/* <DataFetching/> */}
-          <DataFetchingOneAt/>
+          {/* <DataFetchingOneAt/> */}
 
 {/* <UserContext.Provider value={"Maroti"}>
   <ChannelContext.Provider value={"Mern stack"}>
@@ -61,12 +64,18 @@ function App() {
 {/* *********useRef Hook** */}
    {/* <FocusInput/> */}
    {/* <HookTimer/> */}
+   {/* <ControlledComponent/> */}
+   <UncontrolledComponent/>
    {/* *************data pass child to parent */}
    {/* <Parent/> */}
    {/* <Parent/> */}
    {/* <ForceUpdate/> */}
    {/* *********practice example of axios */}
    {/* <Axios/> */}
+
+   {/* ***********Form  Validation**************** */}
+   {/* <FormValidationReact/> */}
+   {/* <ToggleDisplay/> */}
           </div>
   );
 }
